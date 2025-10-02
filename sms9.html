@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SMS Redirect</title>
+  <script>
+    window.onload = function() {
+      // Intentar abrir la app de SMS
+      window.location.href = "sms:81190?body=GIB5%20SCHULEUNDBERUF";
+
+      // Después de 2 segundos, si no se abrió, regresar a la web original
+      setTimeout(function() {
+        window.location.href = "https://www.schule-beruf-berlin.de";
+      }, 2000);
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
